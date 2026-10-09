@@ -1,0 +1,6 @@
+{
+  "name": "BIT Campus Copilot",
+  "description": "Official Academic AI Copilot and Document RAG Assistant for Bharat Institute of Technology (BIT) students and faculty.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
