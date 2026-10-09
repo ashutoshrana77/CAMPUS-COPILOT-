@@ -470,6 +470,38 @@ cp target/campuscopilot.war /path/to/tomcat/webapps/
 # http://localhost:8080/campuscopilot/adminLogin.jsp`}
               </pre>
             </div>
+
+            {/* Step 4: GitHub & Vercel Deployment */}
+            <div className="p-5 bg-gradient-to-r from-blue-900 to-[#071b4a] text-white rounded-xl border border-amber-400/40 space-y-3">
+              <div className="font-bold text-amber-400 text-sm flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-amber-400 text-blue-950 flex items-center justify-center text-xs font-black">4</span>
+                  <span>Push to GitHub & Deploy Live to Vercel</span>
+                </div>
+                <span className="bg-amber-400 text-blue-950 text-[10px] font-black px-2 py-0.5 rounded uppercase">
+                  Cloud Live
+                </span>
+              </div>
+              <p className="text-slate-300 text-xs">
+                To deploy this live on Vercel using your GitHub repository:
+              </p>
+              <div className="space-y-2 text-xs">
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 font-mono text-[11px] text-emerald-400">
+                  <div className="text-slate-400 font-sans font-bold mb-1">// 1. Push code to your GitHub:</div>
+                  <div>git remote add origin https://github.com/YOUR_USERNAME/bit-campus-copilot.git</div>
+                  <div>git branch -M main</div>
+                  <div>git push -u origin main</div>
+                </div>
+                <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 font-mono text-[11px] text-emerald-400">
+                  <div className="text-slate-400 font-sans font-bold mb-1">// 2. In Vercel (vercel.com):</div>
+                  <div>1. Click "Add New Project" -&gt; Import from GitHub repository.</div>
+                  <div>2. Framework Preset: Vite (automatically detected from vercel.json).</div>
+                  <div>3. Root Directory: ./ &nbsp;|&nbsp; Build: npm run build &nbsp;|&nbsp; Output: dist</div>
+                  <div>4. Environment Variables: GEMINI_API_KEY (optional, fallback RAG works out-of-the-box!)</div>
+                  <div>5. Click "Deploy" -&gt; Your BIT Campus Copilot is live in seconds!</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
